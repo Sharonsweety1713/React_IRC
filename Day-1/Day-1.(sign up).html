@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN-UP Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+     <div class="navbar">
+        <a href="Day-1(sign in).html">Sign In</a>
+        <a href="Day-1(sign up).html">Sign Up</a>
+     </div>
+     <div class="c1">
+        <form class="container"  onsubmit="register()">
+        <h1>SIGN-UP</h1>
+       <input type="text" placeholder="Enter Your Name" id ="uname"class="style-input">
+       <input type="password"placeholder="Create  password" id="pass" class="style-input" >
+       <input type="text"placeholder="Confirm password"  id="confirmpass" class="style-input" >
+        <input type="date" placeholder="Enter Your DOB" class="style-input">
+       <input type="number"  placeholder="Phone Number" class="style-input">
+       <input type="email" placeholder="Enter Your email" class="style-input">
+       <input type="number" placeholder="Enter Your Mobile Number" class="style-input">
+        <input type="submit"  value="Sign Up!"  class ="style-btn">
+    </form>
+</div>
+</body>
+<script>
+function register()
+{
+    let x=document.getElementById("uname").value;
+    let m1=document.getElementById("pass").value;
+    let m2=document.getElementById("confirmpass").value;
+    if(confirm("Are You Sure you want to Sign Up?"))
+    {
+        if(m1==m2)
+        {
+            alert("Password Matched");
+            alert(x+" You Have Successfully Signed in!");
+        }
+else
+{
+alert("Your Passwords contridict");
+}
+}
+else
+{
+alert("Failed");
+}
+}
+
+</script>
+</html>

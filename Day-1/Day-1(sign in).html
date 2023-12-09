@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN-IN</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="Day-1(sign in).html">Sign In</a>
+        <a href="Day-1(sign up).html">Sign Up</a>
+     </div>
+     <div class="c1">
+        <form class="container"  onsubmit="register()" >
+        <h1>SIGN-IN</h1>
+       <input type="text" placeholder="Enter Username" id ="uname"class="style-input">
+       <input type="password"placeholder="Enter password" class="style-input" >
+        <input type="submit"  value="Sign In!"  class ="style-btn">
+    </form>
+</div>
+</body>
+<script>
+function register()
+{
+    let x=document.getElementById("uname").value;
+    alert(x+" You Have Successfully Signed in!");
+        
+}
+
+</script>
+</html>
