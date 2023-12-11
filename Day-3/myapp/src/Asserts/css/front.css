@@ -1,0 +1,20 @@
+.front
+{
+    background-image: url("https://cdn.britannica.com/64/94864-050-223C3FE6/Northern-lights-sky-Kautokeino.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 65vh;
+    width:100%;
+   
+}
+.box
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+    font-size: x-large;
+
+}
