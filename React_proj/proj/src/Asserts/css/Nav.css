@@ -1,0 +1,127 @@
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .innerWrapper {
+    max-width: 920px;
+    margin: 20vh auto 0;
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  h2,
+  h4 {
+    font-family: 'Abril Fatface', serif;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0 0 30px 0;
+  }
+  
+  .companyName {
+    padding: 21px 17px 20px 15%;
+    margin: 0;
+    float: left;
+    color: #fff;
+    width: 45%;
+    background: rgba(0, 0, 0, 0.7);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: left;
+    font-variant: small-caps;
+  }
+  
+  nav {
+    padding: 0;
+    margin: 0;
+    width: 55%;
+    float: right;
+  }
+  
+  header nav ul {
+    float: right;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-right: 20px solid rgba(0, 0, 0, 0.7);
+  }
+  
+  header nav ul li {
+    float: left;
+    margin: 0;
+    display: inline;
+    width: 25%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  header nav ul li:hover {
+    background:rgb(194, 193, 193);
+  
+    font-style: bold;
+    transform: scale(1.2);
+  }
+  
+  header nav ul li a{
+    text-decoration: none;
+    padding: 25px 20px;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+  }
+  
+  header nav ul li a:focus {
+    outline: none;
+  }
+  
+  /* .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .popup button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   */
