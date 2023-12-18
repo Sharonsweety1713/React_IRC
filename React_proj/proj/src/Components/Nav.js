@@ -1,16 +1,19 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { Home } from 'lucide-react';
+import { LogIn } from 'lucide-react';
+import { UserPlus } from 'lucide-react';
 
 
 const Nav = () => {
-  const [isLogoutSuccessful, setIsLogoutSuccessful] = useState(false);
+  // const [isLogoutSuccessful, setIsLogoutSuccessful] = useState(false);
 
-  const handleLogout = () => {
+//   const handleLogout = () => {
     
-alert("You have logged out succesfully")
+// alert("You have logged out succesfully")
    
-  };
+  // };
 
   return (
     <header>
@@ -18,28 +21,25 @@ alert("You have logged out succesfully")
         <div className="clearfix">
           <h2 className="companyName">Wander Weavers</h2>
           <nav className="mainNav clearfix">
-            <ul>
-              <Link to="/Home">
-                <li>
-                  <a href="#home">Home</a>
+            <ul >
+              <Link to="/Homepage">
+                <li className="ico">
+                  <Home/>
+                   
                 </li>
               </Link>
               <Link to="/Signin">
-                <li>
-                  <a href="#signin">Sign In</a>
-                </li>
+                <li className="ico">
+                <LogIn/>
+                   </li>
               </Link>
               <Link to="/Signup">
-                <li>
-                  <a href="#signup">Sign Up</a>
+                <li className="ico">
+                <UserPlus/>
+                 
                 </li>
               </Link>
-              <li>
-                <a href="#logout" onClick={handleLogout}>
-                  Logout
-                </a>
-              </li>
-            </ul>
+             </ul>
           </nav>
         </div>
       </div>

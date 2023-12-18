@@ -2,7 +2,7 @@
     text-align: center;
     text-shadow: 1px 0 2px #595859;
     margin: 0;
-background-image: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://img.freepik.com/free-vector/meeting-business-people-avatar-character_24877-57276.jpg?w=740&t=st=1702452220~exp=1702452820~hmac=e32615e486f287b95da8a5ffa4c31827508ec2552fb319d83a8c3069bff018c9");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -48,4 +48,91 @@ background-image: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6
       padding: 25px 2%;
     }
   }
+  .side-cards-list {
+    margin: 0;
+    padding: 0;
+  }
+  .side-card {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
   
+    &.side-card__image--right {
+      flex-direction: row-reverse;
+      @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        margin-bottom: 50px;
+      }
+    }
+  
+    .side-card__image {
+      width: 50%;
+      padding-top: 50%;
+      display: inline-block;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transform: translate(0,80px);
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+        padding-top: 100%;
+      }
+  
+      &.fade {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: opacity .6s .1s,transform 1s;
+      }
+    }
+  
+    .side-card__text__container {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+      }
+  
+      .side-card__text {
+        padding: 20px 100px;
+        @media only screen and (max-width: 768px) {
+          padding: 20px 30px;
+          
+        }
+  
+        .side-card__text__pre-title {
+          margin-bottom: 10px;
+          color: rgb(250, 172, 185);
+          line-height: 1;
+          letter-spacing: 1px;
+          font-size: 15px;
+          font-weight: 550;
+          gap:100px
+        }
+      
+        .side-card__text__title {
+          line-height: 1;
+          margin-bottom: 10px;
+          
+        }
+      }
+    }
+  }
+  p{
+   
+  }
+  /* // fix firefox not showing images. I dont like this hack
+  @-moz-document url-prefix() { 
+    .side-card .side-card__image  {
+      min-height: 400px;
+      @media only screen and (max-width: 500px) {
+        min-height: 300px;
+      }
+    }
+  } */

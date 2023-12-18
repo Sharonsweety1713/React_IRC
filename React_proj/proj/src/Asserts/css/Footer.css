@@ -1,0 +1,35 @@
+.footer {
+    background-color: #333; /* Grey background color */
+    padding: 20px;
+    text-align: center; /* Center-align text within the footer */
+    height:200px;
+  }
+  
+  .footer-links {
+    margin-bottom: 15px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-list li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .footer-list a {
+    text-decoration: none;
+    color: white; /* Link color */
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+    color: white;
+  }
+  
+  /* .footer-social {
+    Add your styles for social media icons or links here
+  }
+   */
