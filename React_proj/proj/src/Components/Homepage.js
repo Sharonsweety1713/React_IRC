@@ -1,22 +1,22 @@
-
+import Footer from '../Components/Footer'
+import '../Asserts/css/Footer.css'
 const  Homepage=()=>
 {
     return(
 		<>
-         <div className="hero">
-					<div className="innerWrapper">
-						<h1>Hire the best freelancers for any job, online</h1>
-                        <br/>
-						<h3>Discover Best Talent by exploring their portfolios</h3>
-					</div>
-				 </div> 
+    <div className="front">
+    <div className="transparent-box">
+    <h1 className="box-text">Hire the best freelancers for any job, online</h1>
+  <h3>Freelance Your Future</h3>
+  </div>
+ </div>
          <div className="side-cards-section">
       <ul className="side-cards-list">
         <li className="side-card">
           <div
             className="side-card__image fade"
             style={{
-              backgroundImage: 'url(https://freelancingbuzz.com/wp-content/uploads/2019/03/mad_blog_5c7fd4dd446e91551881437.png)',
+              backgroundImage: 'url(https://darvideo.tv/wp-content/uploads/2021/09/Demo-animated-video.jpg)',
             }}
             title="side-card-image"
           ></div>
@@ -39,14 +39,13 @@ const  Homepage=()=>
           <div
             className="side-card__image fade"
             style={{
-              backgroundImage: 'url(https://img.freepik.com/premium-vector/flat-design-concept-social-network-peoples-connecting-around-world-with-line-avatar-icon_142963-654.jpg)',
+              backgroundImage: 'url(https://img.freepik.com/premium-vector/working-freelance_118813-2635.jpg)',
             }}
             title="side-card-image"
           ></div>
           <div className="side-card__text__container">
           <div className="side-card__text">
-              <h2 className="side-card__text__title">Tap into a
-global talent network</h2>
+              <h2 className="side-card__text__title">Tap into a global talent network</h2>
               <div className="side-card__text__caption">
               <h6 className="side-card__text__pre-title">Post your job</h6>
                 <p>It's free and easy! Get lots of competitive bids that suit your budget in minutes. Start making your dreams reality.</p>
@@ -94,7 +93,7 @@ global talent network</h2>
           ></div>
           <div className="side-card__text__container">
           <div className="side-card__text">
-              <h2 className="side-card__text__title">Power your organisation's competitive advantage</h2>
+              <h2 className="side-card__text__title">Power your organisation</h2>
               <div className="side-card__text__caption">
               <h6 className="side-card__text__pre-title">Flexible Workforce</h6>
                 <p>Hire freelancers and increase flexibility in scaling your workforce up or down based on project requirements.</p>
@@ -108,7 +107,7 @@ global talent network</h2>
         </li>
       </ul>
     </div>
-
+    <Footer/> 
     </>
 		)
 }

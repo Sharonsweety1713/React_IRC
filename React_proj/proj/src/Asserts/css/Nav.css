@@ -8,6 +8,10 @@ header {
   background-color: #333; 
   color: #fff; 
   padding: 10px 0;
+  position: fixed; 
+  width: 100%; 
+  top: 0; 
+  z-index: 1000; 
 }
 
 .navWrapper {
@@ -35,7 +39,6 @@ header {
 .mainNav {
   float: right;
   margin-right: 5px;
- 
 }
 
 .mainNav ul {
@@ -55,9 +58,7 @@ header {
   font-size: 1rem;
 }
 
-
 header nav ul li:hover {
-
   font-style: bold;
   transform: scale(1.2);
 }
@@ -76,10 +77,10 @@ header nav ul li a {
 header nav ul li a:focus {
   outline: none;
 }
-.ico
-{
- padding-left: 50px;
- display: flex;
- justify-content: center;
- align-items: center;
+
+.ico {
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

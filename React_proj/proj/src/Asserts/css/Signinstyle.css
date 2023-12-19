@@ -178,6 +178,7 @@ form.sign-in-form {
   width: 100%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
+  transform: translateX(20%); /* Adjust the percentage value as needed */
 }
 
 .panel {
@@ -188,6 +189,7 @@ form.sign-in-form {
   text-align: center;
   z-index: 6;
 }
+
 
 .left-panel {
   pointer-events: all;
@@ -230,8 +232,6 @@ form.sign-in-form {
 .right-panel .content {
   transform: translateX(800px);
 }
-
-/* ANIMATION */
 
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
@@ -397,4 +397,12 @@ form.sign-in-form {
     bottom: 28%;
     left: 50%;
   }
+}
+.tittext{
+padding-top: 30px;
+font-size: 20px;
+}
+.tit{
+  padding-top: 50px;
+
 }

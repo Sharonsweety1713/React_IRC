@@ -21,7 +21,7 @@
   
   .footer-list a {
     text-decoration: none;
-    color: white; /* Link color */
+    color: white; 
   }
   
   .footer-contact p {
@@ -29,7 +29,35 @@
     color: white;
   }
   
-  /* .footer-social {
-    Add your styles for social media icons or links here
+  .footer-social {
+    margin-top: 15px;
   }
-   */
+  
+  .footer-social i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    margin: 0 10px; /* Adjust the spacing between icons */
+    color: white; /* Icon color */
+  }
+  
+  /* Example styles for specific social media icons */
+  .footer-social .fa-instagram {
+    color: #e4405f; /* Instagram color */
+  }
+  
+  .footer-social .fa-twitter {
+    color: #1da1f2; /* Twitter color */
+  }
+  
+  .footer-social .fa-facebook {
+    color: #1877f2; /* Facebook color */
+  }
+  
+  .footer-social .fa-whatsapp {
+    color: #25d366; /* WhatsApp color */
+  }
+  
+  .footer-social .fa-github {
+    color: white; /* GitHub color */
+  }
+  
+  

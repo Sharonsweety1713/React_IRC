@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
     text-align: center;
     text-shadow: 1px 0 2px #595859;
     margin: 0;
@@ -9,14 +9,23 @@
     height: 85vh;
     width: 100%;
     padding-top: 5px;
-  }
+    }
   
+.hero h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+}
+
   .hero h1 {
     font-size: 5.5rem;
     margin: 0;
     padding-top: 200px;
     font-family: 'Abril Fatface', serif;
-    color: #2b2929;
+    color: black;
   }
   
   .hero h3 {
@@ -27,8 +36,52 @@
     font-size: 1.7rem;
     font-weight: 700;
     margin: 0;
-  }
+  } */
   
+  .front
+{
+    margin :0;
+    background-image: url("https://img.freepik.com/free-vector/meeting-business-people-avatar-character_24877-57276.jpg?w=740&t=st=1702452220~exp=1702452820~hmac=e32615e486f287b95da8a5ffa4c31827508ec2552fb319d83a8c3069bff018c9");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 85vh;
+    width:100%;
+    padding-top: 200px;
+   
+}
+.transparent-box {
+    width: 55%;
+    height: 45%;
+    margin: auto; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    text-align: center;
+     margin-top: 20vh;  
+    transform: translateY(-50%);
+}
+.box-text {
+    color: #333; 
+    font-size: 60px;
+}
+
+h3 { 
+    display: flex; 
+    flex-direction: row; 
+    color: white;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 50px;
+} 
+  
+h3:before, 
+h3:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid white; 
+    margin: auto; 
+    padding-top: 20px;
+} 
   @media (max-width: 900px) {
     .companyName {
       width: 100%;
@@ -82,6 +135,7 @@
       @media only screen and (max-width: 500px) {
         width: 100%;
         padding-top: 100%;
+        
       }
   
       &.fade {
@@ -99,6 +153,11 @@
         width: 100%;
       }
   
+      h2
+      {
+
+        font-size: 40px;
+      }
       .side-card__text {
         padding: 20px 100px;
         @media only screen and (max-width: 768px) {
@@ -108,10 +167,10 @@
   
         .side-card__text__pre-title {
           margin-bottom: 10px;
-          color: rgb(250, 172, 185);
+          color: rgb(252, 149, 166);
           line-height: 1;
           letter-spacing: 1px;
-          font-size: 15px;
+          font-size: 30px;
           font-weight: 550;
           gap:100px
         }
@@ -125,7 +184,7 @@
     }
   }
   p{
-   
+   font-size: 18px;
   }
   /* // fix firefox not showing images. I dont like this hack
   @-moz-document url-prefix() { 
