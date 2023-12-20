@@ -46,6 +46,8 @@ const Signup = () => {
     <div className="container-custom sign-up-mode">
       <div className="forms-container-custom">
         <div className="signin-signup-custom">
+        
+              
           <form className="sign-in-form-custom" onSubmit={handleSubmit}>
             <h2 className="title-custom">Sign Up</h2>
             <div className="input-field-custom">

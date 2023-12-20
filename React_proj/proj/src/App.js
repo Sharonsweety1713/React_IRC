@@ -4,12 +4,14 @@
  import Signup from'./Components/Signup'
 import Dashboard from './Components/Dashboard'
 import Profile from './Components/Profile'
+import Explore from './Components/Explore'
 import './Asserts/css/Nav.css'
 import './Asserts/css/Signupstyle.css'
 import './Asserts/css/Signinstyle.css'
 import './Asserts/css/Home.css'
 import './Asserts/css/Dashboard.css'
 import './Asserts/css/Profile.css'
+import './Asserts/css/Explore.css'
 import { Route, Routes } from 'react-router-dom';
 
  
@@ -24,6 +26,7 @@ function App(){
       <Route path="/Signup"element={<Signup/>}/>
       <Route path="/Dashboard"element={<Dashboard/>}/>
       <Route path="/Profile"element={<Profile/>}/>
+      <Route path="/Explore"element={<Explore/>}/>
      </Routes>
     
     

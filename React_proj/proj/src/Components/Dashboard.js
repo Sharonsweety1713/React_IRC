@@ -1,21 +1,22 @@
 import { Link } from 'react-router-dom'
 import React from 'react';
 const Dashboard=()=>{
-    const handleSupportClick = () => {
-
-    }
+   
     return(
       <>
         <ul class="sidebar">
      <Link to="/Profile">
       <li class="sidebar-brand"><a href="#">Create Profile</a></li>
       </Link>
-      <li><a href="#">About</a></li>
+      <Link to="/Explore">
+      <li><a href="#">Explore</a></li>
+      </Link>
       <li><a href="#">Feedback</a></li>
+      <div className='out'>
       <Link to="/Homepage">
       <li>Logout</li>
       </Link>
-      <button onClick={handleSupportClick} class="bbttnn">Support</button>
+      </div>
       </ul>
       </>
 
