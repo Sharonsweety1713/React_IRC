@@ -1,47 +1,42 @@
-import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Signup = () => {
-  const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
-  });
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit=(e)=>
+  {
     e.preventDefault();
-
-    // Simple validation
-    const errors = {};
-    let allFieldsFilled = true;
-
-    for (const field in formData) {
-      if (!formData[field].trim()) {
-        errors[field] = `${field.charAt(0).toUpperCase() + field.slice(1)} is required`;
-        allFieldsFilled = false;
-      }
+    if (!username || !password) {
+      toast.error('Please fill in both fields', {
+        position: "bottom-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
     }
-
-    if (!allFieldsFilled) {
-      // Display alerts for each empty field
-      for (const field in errors) {
-        window.alert(errors[field]);
-      }
-    } else {
-      // If all fields are filled, display success message
-      console.log('Signing up:', formData);
-      window.alert('Your all set to go!');
+    else{
+      toast.success("🎉Yay! Your one Step closer", {
+        position: "bottom-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+      setTimeout(() => {
+        window.location.href = '/Dashboard';
+      }, 2000);
     }
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
+    
+  }
   return (
     <div className="container-custom sign-up-mode">
       <div className="forms-container-custom">
@@ -56,8 +51,8 @@ const Signup = () => {
                 type="text"
                 placeholder="Username"
                 name="username"
-                value={formData.username}
-                onChange={handleChange} 
+                value={username}
+                onChange={(e) => setUsername(e.target.value)} required
               />
             </div>
             <div className="input-field-custom">
@@ -66,8 +61,8 @@ const Signup = () => {
                 type="email"
                 placeholder="Email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
+
+               
               />
             </div>
             <div className="input-field-custom">
@@ -76,20 +71,31 @@ const Signup = () => {
                 type="password"
                 placeholder="Password"
                 name="password"
-                value={formData.password}
-                onChange={handleChange}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
 
-            <Link to="/Dashboard">
-            <button className="btn-custom" id="sign-up-btn">
+           
+            <button className="btn-custom" id="sign-up-btn" onClick={handleSubmit}>
               Sign up
             </button>
-              </Link>
-           
+          
             
           </form>
         </div>
+        <ToastContainer
+            position="bottom-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+          />
       </div>
     </div>
   );
