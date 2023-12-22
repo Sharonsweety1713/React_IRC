@@ -38,7 +38,7 @@ Explore:
 
 
 
-Find job:
+
 ![image](https://github.com/Sharonsweety1713/React_IRC/assets/117472753/433b573e-24aa-453e-86aa-29036dc69bf1)
 ![image](https://github.com/Sharonsweety1713/React_IRC/assets/117472753/f4cc76cf-0f06-4578-ac4f-8da96f6d912d)
 ![image](https://github.com/Sharonsweety1713/React_IRC/assets/117472753/f4bf7bb3-ec0a-4801-a968-fd476aa8b4ba)
