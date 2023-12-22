@@ -4,6 +4,8 @@ This website serves as a marketplace where freelancers can showcase their skills
 
 Home:
 ![home page](https://github.com/Sharonsweety1713/React_IRC/assets/117472753/6834e659-85df-4d24-8ea2-598820281b26)
+![image](https://github.com/Sharonsweety1713/React_IRC/assets/117472753/7c4c3266-9ed4-45c1-8a1f-0e92d3eb9847)
+
 
 
 Sign in:
