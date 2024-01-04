@@ -17,6 +17,9 @@ Home:
 
 
 Sign in:
+
+UserName-sharon
+Password-1713
 ![sign in page](https://github.com/Sharonsweety1713/React_IRC/assets/117472753/745c8633-4427-4734-9244-48da836bc9d0)
 
 
