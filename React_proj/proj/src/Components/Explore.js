@@ -1,4 +1,5 @@
 import React from 'react';
+import LikeComponent from './LikeComponent';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 const Explore = () => (
     <>
@@ -22,6 +23,7 @@ const Explore = () => (
 						<h2>Seamus McPhearson</h2>
 						<h3>Frontend Enthusiast</h3>
 					</div>
+					 <LikeComponent/>
 					<div class="info-follow">
 						<div class="follow-followers">
 							<span>173</span><br />

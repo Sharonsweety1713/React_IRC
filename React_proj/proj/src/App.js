@@ -14,6 +14,7 @@ import './Asserts/css/Dashboard.css'
 import './Asserts/css/Profile.css'
 import './Asserts/css/Explore.css'
 import './Asserts/css/Jobs.css'
+import './Asserts/LikeComponent.css'
 import { Route, Routes } from 'react-router-dom';
 
  
